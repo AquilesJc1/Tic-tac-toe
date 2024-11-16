@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body id="body">
+
+    <div id="bck_op">
+        <h1 id="op">X</h1>   
+    </div>
+
+    <div class="titulo">
+        <h1 id="center">Tic-tac-toe</h1>    
+    </div>
+
+    <div class="table">
+
+        <div id="top-left" onclick="add('top-left')" class="line-right line-bottom"></div>
+        <div id="top-center" onclick="add('top-center')" class="line-bottom"></div>
+        <div id="top-right" onclick="add('top-right')" class="line-left line-bottom"></div>
+
+        <div id="middle-left" onclick="add('middle-left')" class="line-bottom line-right"></div>
+        <div id="middle-center" onclick="add('middle-center')" class="line-bottom"></div>
+        <div id="middle-right" onclick="add('middle-right')" class="line-bottom line-left"></div>
+
+        <div id="low-left" onclick="add('low-left')" class="line-right"></div>
+        <div id="low-center" onclick="add('low-center')"></div>
+        <div id="low-right" onclick="add('low-right')" class="line-left"></div>
+
+    </div>
+
+    <!-- <div class="results-div">
+        <p id="results">Voce ganhou jogador 1</p>    
+    </div> -->
+
+    <div class="results" id="results-game">
+        <div class="center-results" id="center-results">
+            <p id="win"></p>
+            <div class="button-center">
+                <button id="btn-restart" onclick="clean()">Reiniciar</button>   
+            </div>
+        </div>
+    </div>
+
+    <div class="created" id="created">
+        <div class="main">
+            <p>2024 &copy; AquilesJc1</p>
+        </div>
+        
+    </div>
+
+</body>
+</html>

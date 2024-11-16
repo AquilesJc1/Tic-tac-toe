@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.created .main{
+    text-align: center;
+}
+
+.created{
+    position: fixed;
+    bottom: 10px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,0,0,0.5);
+    /* background: radial-gradient(circle, rgba(255, 0, 0, 0.644), rgba(128,0,0,0.5)) 0 0 / 200% 200%; */
+    animation: wave 8s infinite alternate;
+}
+
+/* background: radial-gradient(circle, rgba(0,0,255,0.5), rgba(0,0,128,0.5)) 0 0 / 200% 200%; */
+
+/* Animação para o efeito de ondas */
+@keyframes wave {
+0% {
+  background-position: 0% 0%;
+}
+100% {
+  background-position: 100% 100%;
+}
+}
+
+#center{
+    text-align: center;
+}
+
+.titulo{
+    position: fixed;
+    top: 10px;
+    text-align: center;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.x{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table{
+    width: 360px;
+    height: 360px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.table div{
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.results-div{
+    position: fixed;
+    bottom: 20px;
+}
+
+.results-div #results{
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.line-right{
+    border-right: 3px solid white;
+}
+
+.line-left{
+    border-left: 3px solid white;
+}
+
+.line-bottom{
+    border-bottom: 3px solid white;
+}
+
+.line-top{
+    border-top: 3px solid white;
+}
+
+#op{
+    color: red;
+    font-weight: 900;
+}
+
+#bck_op{    
+    position: fixed;
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 0 10px #ccc;
+}
+
+#results-game{
+    height: 100%;
+    width: 0;    
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    backdrop-filter: blur(3px);
+}
+
+.results #center-results{
+    display: none;
+}
+
+.results #win{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+
+.results .center-results .button-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.results .center-results .button-center #btn-restart{
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: gray;
+    color: white;
+}
+
+.results .center-results .button-center #btn-restart:hover{
+    background-color: rgb(156, 156, 156);
+}
+
+@media screen and (max-width: 500px) {
+    .table{
+        width: 360px;
+        height: 360px;
+    }
+
+    .table div{
+        width: 120px;
+        height: 120px;
+    }
+}
