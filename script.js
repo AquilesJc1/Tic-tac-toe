@@ -15,11 +15,11 @@ function add(row) {
     if (primaryPlay == 'O') {
         opc_text.innerHTML = "O";
         opc_text.style.color = "blue";
-        fundo.style.backgroundColor = "rgba(0,0,255,0.5)";
+        fundo.style.backgroundColor = "rgba(0,0,255,0.3)";
         opc_text.style.color = "blue";
     }else {
         opc_text.innerHTML = "X";
-        fundo.style.backgroundColor = "rgba(255,0,0,0.5)";
+        fundo.style.backgroundColor = "rgba(255,0,0,0.3)";
         opc_text.style.color = "red";
     }
 
@@ -51,7 +51,7 @@ function add(row) {
         win_text.innerHTML = "X venceu";
         center_results.style.display = "block";
         results_div.style.width = "100%";
-        results_div.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+        results_div.style.backgroundColor = "rgba(255, 0, 0, 0.3)";
         document.getElementById('body').style.backgroundColor = "rgb(240,240,240)";
     } 
 
@@ -61,7 +61,7 @@ function add(row) {
         win_text.innerHTML = "O venceu";
         center_results.style.display = "block";
         results_div.style.width = "100%";
-        results_div.style.backgroundColor = "rgba(0, 0, 255, 0.5)";
+        results_div.style.backgroundColor = "rgba(0, 0, 255, 0.3)";
         document.getElementById('body').style.backgroundColor = "rgb(240,240,240)";
     } 
 
@@ -71,7 +71,7 @@ function add(row) {
         win_text.innerHTML = "Empate";
         center_results.style.display = "block";
         results_div.style.width = "100%";
-        results_div.style.backgroundColor = "rgba(0, 255, 0, 0.5)";
+        results_div.style.backgroundColor = "rgba(0, 255, 0, 0.3)";
         document.getElementById('body').style.backgroundColor = "rgb(240,240,240)";
     } 
 
