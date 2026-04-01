@@ -150,5 +150,5 @@ function clean() {
     primaryPlay = 'X';
     document.getElementById('op').innerHTML = 'X';
     document.getElementById('op').style.color = 'red';
-    document.getElementById('body').style.background = "rgba(255, 0, 0, 0.5)";
+    document.getElementById('body').style.background = "rgba(255, 0, 0, 0.3)";
 }
